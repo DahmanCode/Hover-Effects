@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;  
+    background: #06181f; 
+}
+
+.container
+{
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container .icon
+{
+    width: 200px;
+}
+
+.container .icon path
+{
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #31e8ff;
+}
+
+.container .icon.twitter path
+{
+    stroke-dasharray: 1520;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.twitter:hover path
+{
+    animation: animate-twitter 1.5s linear forwards;
+}
+@keyframes animate-twitter
+{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }    
+    40%
+    {
+        stroke-dashoffset: 1520;
+    }    
+    80%
+    {
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }    
+    100%
+    {
+        stroke-dashoffset: 3120;
+        fill: #31e8ff;
+    }    
+}
+
+.container .icon.linkedin path
+{
+    stroke-dasharray: 1810;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.linkedin:hover path
+{
+    animation: animate-hlinkedin 1.5s linear forwards;
+}
+@keyframes animate-hlinkedin
+{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }    
+    40%
+    {
+        stroke-dashoffset: 1810;
+    }    
+    80%
+    {
+        stroke-dashoffset: 3620;
+        fill: transparent;
+    }    
+    100%
+    {
+        stroke-dashoffset: 3620;
+        fill: #31e8ff;
+    }    
+}
+.container .icon.facebook path
+{
+    stroke-dasharray: 1810;
+    stroke-dashoffset: 0;
+}
+
+.container .icon.facebook:hover path
+{
+    animation: animate-facebook 1.5s linear forwards;
+}
+@keyframes animate-facebook
+{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }    
+    40%
+    {
+        stroke-dashoffset: 1810;
+    }    
+    80%
+    {
+        stroke-dashoffset: 3620;
+        fill: transparent;
+    }    
+    100%
+    {
+        stroke-dashoffset: 3620;
+        fill: #31e8ff;
+    }    
+}
