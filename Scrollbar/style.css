@@ -1,19 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&display=swap');
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  font-family: 'Gowun Batang', serif;
+  font-size: 60px;
+  text-align: center;
+  background: #B3A6FF;
+  border-radius: 60px 100% 60px 100%;
+  width: 600px;
+  height: 100px;
+  
+}
+
+p {
+  font-family: 'Gowun Batang', serif;
+  font-size: 30px;
+  text-align: center;
+}
+
 ::-webkit-scrollbar {
     width:15px;
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #33cc99;
     border-radius: 50px;
-  }
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #dd11aa;
+  border-radius: 50px;
+}
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #9922ff;
     border-radius: 50px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #ffbb55;
-    border-radius: 50px;
-  }
-  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffee99;
+  border-radius: 50px;
+}
